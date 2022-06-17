@@ -1,1 +1,86 @@
 @import "bootstrap.css";
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
+
+$main_font: '20 Kopeek';
+$white: #FFFFFF;
+
+header {
+  z-index: 2;
+}
+
+.navbar-light .navbar-nav .active .nav-link {
+  margin-top: -30px;
+}
+
+
+nav {
+  p {
+    width: 193px;
+    margin-top: 25px;
+    margin-left: 22px;
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: $white;
+  }
+
+  .phone {
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $white;
+    position: relative;
+    top: 38px;
+    left: 44px;
+  }
+
+  .facebook {
+    margin-left: 23px;
+  }
+
+  .instagram {
+    margin-left: 23px;
+  }
+
+  .nav-item img {
+    &:hover {
+      text-decoration: none;
+      transform: scale(1.1);
+      transition: transform 0.7s;
+    }
+  }
+}
+
+.main_banner {
+  background-image: url("../images/banner1.jpg");
+  background-size: cover;
+  height: 100vh;
+
+
+  &.item_2 {
+    background-image: url("../images/banner2.jpg");
+  }
+
+  &.item_3 {
+    background-image: url("../images/banner3.jpg");
+  }
+
+  &.item_4 {
+    background-image: url("../images/banner4.jpg");
+  }
+}
+
+.owl-carousel {
+  button {
+    display: none;
+  }
+}
+
+
+
+
