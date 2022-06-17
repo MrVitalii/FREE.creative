@@ -20,7 +20,7 @@ nav p {
 @media only screen and (max-width: 991px) {
   nav p {
     margin-left: -290px; } }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 428px) {
   nav p {
     margin-left: 20px; } }
 nav .phone {
