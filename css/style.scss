@@ -13,7 +13,6 @@ header {
   margin-top: -30px;
 }
 
-
 nav {
   p {
     width: 193px;
@@ -25,6 +24,12 @@ nav {
     font-size: 15px;
     line-height: 19px;
     color: $white;
+    @media only screen and (max-width: 991px) {
+      margin-left: -290px;
+    }
+    @media only screen and (max-width: 991px) {
+      margin-left: 20px;
+    }
   }
 
   .phone {
@@ -41,10 +46,16 @@ nav {
 
   .facebook {
     margin-left: 23px;
+    @media only screen and (max-width: 991px) {
+      margin-left: 10px;
+    }
   }
 
   .instagram {
     margin-left: 23px;
+    @media only screen and (max-width: 991px) {
+      margin-left: 10px;
+    }
   }
 
   .nav-item img {

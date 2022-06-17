@@ -17,6 +17,12 @@ nav p {
   font-size: 15px;
   line-height: 19px;
   color: #FFFFFF; }
+@media only screen and (max-width: 991px) {
+  nav p {
+    margin-left: -290px; } }
+@media only screen and (max-width: 991px) {
+  nav p {
+    margin-left: 20px; } }
 nav .phone {
   font-family: '20 Kopeek';
   font-style: normal;
@@ -29,8 +35,14 @@ nav .phone {
   left: 44px; }
 nav .facebook {
   margin-left: 23px; }
+@media only screen and (max-width: 991px) {
+  nav .facebook {
+    margin-left: 10px; } }
 nav .instagram {
   margin-left: 23px; }
+@media only screen and (max-width: 991px) {
+  nav .instagram {
+    margin-left: 10px; } }
 nav .nav-item img:hover {
   text-decoration: none;
   transform: scale(1.1);
