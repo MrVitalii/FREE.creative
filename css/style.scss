@@ -3,14 +3,160 @@
 @import "owl.theme.default.css";
 
 $main_font: '20 Kopeek';
+$secondary_font: '20 Kopeek Book';
 $white: #FFFFFF;
+$blue: #2B59C3;
+$black: #181818;
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+/*fonts_start*/
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-BookItalic.woff2') format('woff2'),
+  url('../fonts/20Kopeek-BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-Black.woff2') format('woff2'),
+  url('../fonts/20Kopeek-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-DemiBoldItalic.woff2') format('woff2'),
+  url('../fonts/20Kopeek-DemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek.woff2') format('woff2'),
+  url('../fonts/20Kopeek.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-BlackItalic.woff2') format('woff2'),
+  url('../fonts/20Kopeek-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-Book.woff2') format('woff2'),
+  url('../fonts/20Kopeek-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-Bold.woff2') format('woff2'),
+  url('../fonts/20Kopeek-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-BoldItalic.woff2') format('woff2'),
+  url('../fonts/20Kopeek-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-DemiBold.woff2') format('woff2'),
+  url('../fonts/20Kopeek-DemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-Thin.woff2') format('woff2'),
+  url('../fonts/20Kopeek-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-ThinItalic.woff2') format('woff2'),
+  url('../fonts/20Kopeek-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-Italic.woff2') format('woff2'),
+  url('../fonts/20Kopeek-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-LightItalic.woff2') format('woff2'),
+  url('../fonts/20Kopeek-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('../fonts/20Kopeek-Light.woff2') format('woff2'),
+  url('../fonts/20Kopeek-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*fonts_end*/
+
+/*page1*/
 header {
-  z-index: 2;
+  z-index: 3;
 }
 
 .navbar-light .navbar-nav .active .nav-link {
   margin-top: -30px;
+}
+
+.navbar-nav {
+  @include max-screen(768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 nav {
@@ -24,10 +170,10 @@ nav {
     font-size: 15px;
     line-height: 19px;
     color: $white;
-    @media only screen and (max-width: 991px) {
+    @include max-screen(991px) {
       margin-left: -290px;
     }
-    @media only screen and (max-width: 428px) {
+    @include max-screen(428px) {
       margin-left: 20px;
     }
   }
@@ -41,19 +187,19 @@ nav {
     color: $white;
     position: relative;
     top: 38px;
-    left: 44px;
+    left: 17px;
   }
 
   .facebook {
     margin-left: 23px;
-    @media only screen and (max-width: 991px) {
+    @include max-screen(992px) {
       margin-left: 10px;
     }
   }
 
   .instagram {
     margin-left: 23px;
-    @media only screen and (max-width: 991px) {
+    @include max-screen(992px) {
       margin-left: 10px;
     }
   }
@@ -67,30 +213,293 @@ nav {
   }
 }
 
-.main_banner {
-  background-image: url("../images/banner1.jpg");
-  background-size: cover;
+.main_section {
   height: 100vh;
 
-
-  &.item_2 {
-    background-image: url("../images/banner2.jpg");
+  .h-100 {
+    height: 100vh;
   }
 
-  &.item_3 {
-    background-image: url("../images/banner3.jpg");
+  .position-absolute {
+    z-index: 2;
+
+    h1 {
+
+      font-family: $secondary_font;
+      font-size: 55px;
+      line-height: 100%;
+      color: $black;
+      margin-bottom: 30px;
+      @include max-screen(992px) {
+        margin-left: 14px;
+      }
+      @include max-screen(768px) {
+        color: $white;
+        padding-top: 75px;
+        width: 560px;
+        margin-left: 14px;
+      }
+      @include max-screen(428px) {
+        padding-top: 124px;
+        line-height: 44px;
+        width: 420px;
+        margin-left: 14px;
+      }
+    }
+
+    h2 {
+
+      font-family: $secondary_font;
+      font-size: 34px;
+      line-height: 110%;
+      color: $black;
+      @include max-screen(992px) {
+        margin-left: 14px;
+      }
+      @include max-screen(768px) {
+        color: $white;
+        width: 560px;
+        margin-left: 14px;
+      }
+      @include max-screen(428px) {
+        width: 395px;
+        margin-left: 14px;
+      }
+    }
+
+    .btn-light {
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 140%;
+      color: $black;
+      padding-top: 23px;
+      margin-top: 65px;
+      margin-right: 20px;
+      width: 186px;
+      height: 71px;
+      background: #FFFFFF;
+      border-radius: 40px;
+      @include max-screen(992px) {
+        margin-left: 14px;
+      }
+      @include max-screen(768px) {
+        margin-top: 24px;
+        margin-left: 14px;
+      }
+      @include max-screen(428px) {
+        margin-left: 14px;
+        margin-top: 10px;
+      }
+    }
   }
 
-  &.item_4 {
-    background-image: url("../images/banner4.jpg");
+  .main_banner {
+    background-image: url("../images/banner1.jpg");
+    background-size: cover;
+    height: 100vh;
+    @include max-screen(768px) {
+      background-image: url("../images/main_page mobile_ver.jpg");
+    }
+
+    &.item_2 {
+      background-image: url("../images/banner2.jpg");
+    }
+
+    &.item_3 {
+      background-image: url("../images/banner3.jpg");
+    }
+
+    &.item_4 {
+      background-image: url("../images/banner4.jpg");
+    }
+  }
+
+  .owl-carousel {
+    button {
+      display: none;
+    }
   }
 }
 
-.owl-carousel {
+/*page1_end*/
+
+/*page2*/
+.firm_style {
+  padding-top: 68px;
+  padding-bottom: 134px;
+
+  h4 {
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 110%;
+    color: $black;
+  }
+
+  p {
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: $black;
+  }
+}
+
+/*page2_end*/
+
+/*page3*/
+.logos_and_names {
+  .first_column {
+    font-size: 55px;
+    top: -30px;
+    font-family: $secondary_font;
+    font-weight: 400;
+  }
+
+  .second_column {
+    font-size: 18px;
+  }
+
+  h2 {
+    width: 1162px;
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 100%;
+    color: $black;
+  }
+
+  .second_column {
+    margin-left: 8px;
+    margin-bottom: 120px;
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: $black;
+
+    span {
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      color: #181818;
+    }
+  }
+}
+
+/*page3_end*/
+
+/*page4*/
+.what_is_firm_style {
+  padding: 120px 0 134px 0;
+
+  h4 {
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 110%;
+    color: $black;
+  }
+
+  p {
+
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: $black;
+  }
+
+  .text_background {
+    background: $blue;
+    height: 93px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: $white;
+    padding: 8px;
+  }
+}
+
+/*page4_end*/
+
+/*page5*/
+.portfolio {
+  h3 {
+    width: 268px;
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 100%;
+    color: $black;
+  }
+
+  p {
+    max-width: 233px;
+    height: 50px;
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: $black;
+  }
+
+  a {
+    align-items: center;
+    padding: 23px 47px;
+    gap: 10px;
+    width: 231px;
+    height: 71px;
+    border-radius: 40px;
+    color: $black;
+    @include max-screen(992px) {
+      margin-left: 40px;
+    }
+
+    .btn {
+      color: black;
+    }
+  }
+
+  .btn-primary {
+    color: white;
+  }
+}
+
+/*page5_end*/
+
+/*Form_page6*/
+.form_callback {
+  padding-top: 77px;
+
+  .form-check {
+    padding-left: 36px;
+  }
+
   button {
-    display: none;
+    width: 228px;
+    height: 71px;
+    border-radius: 40px;
   }
 }
+
+/*Form_page6_end*/
+
+
 
 
 
