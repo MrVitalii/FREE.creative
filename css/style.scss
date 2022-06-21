@@ -469,14 +469,23 @@ nav {
     @include max-screen(992px) {
       margin-left: 40px;
     }
+  }
 
-    .btn {
-      color: black;
+  .border {
+    @include max-screen(428px) {
+      margin-left: 90px;
+      margin-bottom: 20px;
+    }
+    @include max-screen(360px) {
+      margin-left: 52px;
     }
   }
 
   .btn-primary {
     color: white;
+    @include max-screen(428px) {
+      margin-left: 14px;
+    }
   }
 }
 
@@ -494,6 +503,15 @@ nav {
     width: 228px;
     height: 71px;
     border-radius: 40px;
+  }
+
+  .btn-primary {
+    @include max-screen(428px) {
+      margin-left: 90px;
+    }
+    @include max-screen(360px) {
+      margin-left: 60px;
+    }
   }
 }
 
