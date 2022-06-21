@@ -338,10 +338,18 @@ nav .nav-item img:hover {
 @media screen and (max-width: 992px) {
   .portfolio a {
     margin-left: 40px; } }
-  .portfolio a .btn {
-    color: black; }
+@media screen and (max-width: 428px) {
+  .portfolio .border {
+    margin-left: 90px;
+    margin-bottom: 20px; } }
+@media screen and (max-width: 360px) {
+  .portfolio .border {
+    margin-left: 52px; } }
 .portfolio .btn-primary {
   color: white; }
+@media screen and (max-width: 428px) {
+  .portfolio .btn-primary {
+    margin-left: 14px; } }
 
 /*page5_end*/
 /*Form_page6*/
@@ -353,5 +361,11 @@ nav .nav-item img:hover {
     width: 228px;
     height: 71px;
     border-radius: 40px; }
+  @media screen and (max-width: 428px) {
+    .form_callback .btn-primary {
+      margin-left: 90px; } }
+  @media screen and (max-width: 360px) {
+    .form_callback .btn-primary {
+      margin-left: 60px; } }
 
 /*Form_page6_end*/
