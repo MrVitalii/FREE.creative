@@ -340,10 +340,6 @@ nav .nav-item img:hover {
   .portfolio .border {
     margin-left: 65px;
     margin-bottom: 20px; } }
-@media screen and (max-width: 360px) {
-  .portfolio .border {
-    margin-left: 52px;
-    margin-top: 20px; } }
 .portfolio .btn-primary {
   color: white; }
 @media screen and (max-width: 428px) {
