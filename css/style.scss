@@ -473,11 +473,12 @@ nav {
 
   .border {
     @include max-screen(428px) {
-      margin-left: 90px;
+      margin-left: 65px;
       margin-bottom: 20px;
     }
     @include max-screen(360px) {
       margin-left: 52px;
+      margin-top: 20px;
     }
   }
 
