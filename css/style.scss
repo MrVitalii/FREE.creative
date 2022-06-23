@@ -466,10 +466,7 @@ nav {
     border-radius: 40px;
     color: $black;
   }
-    //@include max-screen(992px) {
-    //  margin-left: 40px;
-    //}
-  .border {
+  .btn.border {
     @include max-screen(428px) {
       margin-left: 65px;
       margin-bottom: 20px;
@@ -477,6 +474,9 @@ nav {
     @include max-screen(360px) {
       margin-left: 52px;
       margin-top: 20px;
+    }
+    @include max-screen(992px) {
+      margin-left: 50px;
     }
   }
   .btn.btn-primary{

@@ -335,13 +335,16 @@ nav .nav-item img:hover {
   border-radius: 40px;
   color: #181818; }
 @media screen and (max-width: 428px) {
-  .portfolio .border {
+  .portfolio .btn.border {
     margin-left: 65px;
     margin-bottom: 20px; } }
 @media screen and (max-width: 360px) {
-  .portfolio .border {
+  .portfolio .btn.border {
     margin-left: 52px;
     margin-top: 20px; } }
+@media screen and (max-width: 992px) {
+  .portfolio .btn.border {
+    margin-left: 50px; } }
 .portfolio .btn.btn-primary {
   color: white;
   width: 250px; }
