@@ -336,7 +336,7 @@ nav .nav-item img:hover {
   color: #181818; }
 @media screen and (max-width: 360px) {
   .portfolio .btn.border {
-    margin: 20px; } }
+    margin-left: 20px; } }
 @media screen and (max-width: 428px) {
   .portfolio .btn.border {
     margin-left: 65px;
