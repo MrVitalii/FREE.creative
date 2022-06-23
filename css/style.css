@@ -330,20 +330,23 @@ nav .nav-item img:hover {
   align-items: center;
   padding: 23px 47px;
   gap: 10px;
+  width: 231px;
   height: 71px;
   border-radius: 40px;
   color: #181818; }
-@media screen and (max-width: 992px) {
-  .portfolio a {
-    margin-left: 40px; } }
 @media screen and (max-width: 428px) {
   .portfolio .border {
     margin-left: 65px;
     margin-bottom: 20px; } }
-.portfolio .btn-primary {
-  color: white; }
+@media screen and (max-width: 360px) {
+  .portfolio .border {
+    margin-left: 52px;
+    margin-top: 20px; } }
+.portfolio .btn.btn-primary {
+  color: white;
+  width: 250px; }
 @media screen and (max-width: 428px) {
-  .portfolio .btn-primary {
+  .portfolio .btn.btn-primary {
     margin-left: 14px; } }
 
 /*page5_end*/
