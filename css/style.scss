@@ -13,6 +13,11 @@ $black: #181818;
     @content;
   }
 }
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
 
 /*fonts_start*/
 @font-face {
@@ -224,7 +229,6 @@ nav {
     z-index: 2;
 
     h1 {
-
       font-family: $secondary_font;
       font-size: 55px;
       line-height: 100%;
@@ -248,7 +252,6 @@ nav {
     }
 
     h2 {
-
       font-family: $secondary_font;
       font-size: 34px;
       line-height: 110%;
@@ -281,6 +284,7 @@ nav {
       height: 71px;
       background: #FFFFFF;
       border-radius: 40px;
+
       @include max-screen(992px) {
         margin-left: 14px;
       }
@@ -302,7 +306,6 @@ nav {
     @include max-screen(768px) {
       background-image: url("../images/main_page mobile_ver.jpg");
     }
-
     &.item_2 {
       background-image: url("../images/banner2.jpg");
     }
@@ -399,7 +402,7 @@ nav {
 
 /*page4*/
 .what_is_firm_style {
-  padding: 120px 0 134px 0;
+  padding: 75px 0 134px 0;
 
   h4 {
     font-family: $secondary_font;
