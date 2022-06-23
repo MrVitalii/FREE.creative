@@ -334,14 +334,13 @@ nav .nav-item img:hover {
   height: 71px;
   border-radius: 40px;
   color: #181818; }
+@media screen and (max-width: 360px) {
+  .portfolio .btn.border {
+    margin: 20px; } }
 @media screen and (max-width: 428px) {
   .portfolio .btn.border {
     margin-left: 65px;
     margin-bottom: 20px; } }
-@media screen and (max-width: 360px) {
-  .portfolio .btn.border {
-    margin-left: 52px;
-    margin-top: 20px; } }
 @media screen and (max-width: 992px) {
   .portfolio .btn.border {
     margin-left: 50px; } }
