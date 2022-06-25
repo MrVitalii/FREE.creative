@@ -300,22 +300,11 @@ nav {
   }
 
   .main_banner {
-    background-image: url("../images/banner1.jpg");
+    background-image: url("../images/banner2.jpg");
     background-size: cover;
     height: 100vh;
     @include max-screen(768px) {
       background-image: url("../images/main_page mobile_ver.jpg");
-    }
-    &.item_2 {
-      background-image: url("../images/banner2.jpg");
-    }
-
-    &.item_3 {
-      background-image: url("../images/banner3.jpg");
-    }
-
-    &.item_4 {
-      background-image: url("../images/banner4.jpg");
     }
   }
 
